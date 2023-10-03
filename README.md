@@ -12,4 +12,4 @@ THE TASK: data types from the messy API responses using regular expression;
 -Event dates/times follow the pattern "MMM DD, YYYY - hh:mm AM/PM" with standard date and 12-hour time formatting.
 -Email addresses follow the common format "name@domain.com".
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fintro-to-regex-in-python-9d57e365d4c8&psig=AOvVaw3146jY1Fy5zR9pj3h1IC2p&ust=1696397687979000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDMqICU2YEDFQAAAAAdAAAAABAE
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40booyakarahul%2Fcommon-regular-expressions-handbook-601501b16474&psig=AOvVaw3146jY1Fy5zR9pj3h1IC2p&ust=1696397687979000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDMqICU2YEDFQAAAAAdAAAAABAl
