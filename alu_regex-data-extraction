@@ -40,7 +40,15 @@ rgb_colors = extract_rgb_colors(api_response)
 print(rgb_colors)
 
 #TASK 3: extract RGB color values(where single color is expected)
-
+def extract_rgb_colors(text):
+    pattern = r'rgb\((\d+), (\d+), (\d+)\)'
+    matches = re.search(pattern, text)
+    if matches:
+        red = matches.group(1)
+        green = matches.group(2)
+        blue = matches.group(3)
+        return red, green, blue
+    return None, None, None
 
 #TASK 4: Social media usernames are in the format "@username" where 
 username can be letters and numbers.
