@@ -17,8 +17,7 @@ restaurant_data = extract_restaurant_data(api_response)
 print(restaurant_data)
 
 
-#TASK 2: Ingredient lists are comma-separated like "ingredient1, 
-ingredient2, ingredient3".
+#TASK 2: Ingredient lists are comma-separated like "ingredient1, ingredient2, ingredient3".
 
 def extract_ingredients(api_response):
     pattern = r'([^,]+)'
@@ -29,10 +28,7 @@ api_response = "ingredient1, ingredient2, ingredient3"
 ingredients = extract_ingredients(api_response)
 print(ingredients)
 
-
-
-#TASK 3: RGB colors are strings like "rgb(255, 255, 255)" with 3 
-numeric values.
+#TASK 3: RGB colors are strings like "rgb(255, 255, 255)" with 3 numeric values(Where multiple colours are expected)
 
 def extract_rgb_colors(api_response):
     pattern = r'rgb\((\d+), (\d+), (\d+)\)'
@@ -43,6 +39,7 @@ api_response = "rgb(255, 255, 255)"
 rgb_colors = extract_rgb_colors(api_response)
 print(rgb_colors)
 
+#TASK 3: extract RGB color values(where single color is expected)
 
 
 #TASK 4: Social media usernames are in the format "@username" where 
