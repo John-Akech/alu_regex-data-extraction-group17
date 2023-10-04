@@ -7,15 +7,19 @@ both are arbitrary strings.
 
 import re
 
-def extract_restaurant_data(api_response):
-    pattern = r'(.+) - (.+)'
-    matches = re.findall(pattern, api_response)
-    return matches
+text = "Mama Mia - Italian"
 
-api_response = "Restaurant Name - Cuisine Type"
-restaurant_data = extract_restaurant_data(api_response)
-print(restaurant_data)
+pattern = r"^(.+?) - (.+)$"
 
+match = re.match(pattern, text)
+
+if match:
+    restaurant_name = match.group(1)
+    cuisine = match.group(2)
+    print(f"Restaurant Name: {restaurant_name}")
+    print(f"Cuisine: {cuisine}")
+else:
+    print("No match found")
 
 #TASK 2: Ingredient lists are comma-separated like "ingredient1, 
 ingredient2, ingredient3".
