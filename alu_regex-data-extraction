@@ -48,6 +48,8 @@ print(rgb_colors)
 #TASK 4: Social media usernames are in the format "@username" where 
 username can be letters and numbers.
 
+import re  
+
 def extract_usernames(api_response):
     pattern = r'@(\w+)'
     matches = re.findall(pattern, api_response)
@@ -56,6 +58,7 @@ def extract_usernames(api_response):
 api_response = "@username"
 usernames = extract_usernames(api_response)
 print(usernames)
+
 
 
 
